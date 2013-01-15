@@ -4,7 +4,7 @@
   <title><![CDATA[Category: oop-toy | AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/blog/categories/oop-toy/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-15T23:20:35+08:00</updated>
+  <updated>2013-01-15T23:26:23+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -19,6 +19,15 @@
     <updated>2013-01-15T22:30:00+08:00</updated>
     <id>http://AmongOthers.github.com/blog/2013/01/15/pocket-money</id>
     <content type="html"><![CDATA[<p>银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100）;如果是大学生，则给更多的金额(例如500)。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jack需要一个人或者两个人来签署文件]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/15/sign-file/"/>
+    <updated>2013-01-15T22:21:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/15/sign-file</id>
+    <content type="html"><![CDATA[<p>职工jack的工作需要将文件(OfficeFile)交给他的上司审阅，上司会在文件上标记同意与否，然后署名。一般而言，jack只需要把文件交给mick审阅就可以了。有时候他需要先把文件交给mike审阅，然后给另一个上司lily审阅，只有双方都同意，这份文件才能通过（当然如果mike已经不同意了，那么就不需要交给lily了），不过文件上只有一个署名栏，这个时候不需要lily的署名。</p>
 ]]></content>
   </entry>
   
