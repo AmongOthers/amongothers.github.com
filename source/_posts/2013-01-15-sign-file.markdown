@@ -1,0 +1,10 @@
+---
+layout: post
+title: "jack需要一个人或者两个人来签署文件"
+date: 2013-01-15 22:21
+comments: true
+categories: oop-top
+tips: oop
+---
+
+职工jack的工作需要将文件(OfficeFile)交给他的上司审阅，上司会在文件上标记同意与否，然后署名。一般而言，jack只需要把文件交给mick审阅就可以了。有时候他需要先把文件交给mike审阅，然后给另一个上司lily审阅，只有双方都同意，这份文件才能通过（当然如果mike已经不同意了，那么就不需要交给lily了），不过文件上只有一个署名栏，这个时候不需要lily的署名。
