@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: afterReading | AmongOthers' Blog]]></title>
-  <link href="http://amongothers.github.com/blog/categories/afterreading/atom.xml" rel="self"/>
-  <link href="http://amongothers.github.com/"/>
-  <updated>2013-01-15T22:46:53+08:00</updated>
-  <id>http://amongothers.github.com/</id>
+  <link href="http://AmongOthers.github.com/blog/categories/afterreading/atom.xml" rel="self"/>
+  <link href="http://AmongOthers.github.com/"/>
+  <updated>2013-01-15T23:20:35+08:00</updated>
+  <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[项目管理修炼之道]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/05/manageit/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/05/manageit/"/>
     <updated>2013-01-05T23:36:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/05/manageit</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/05/manageit</id>
     <content type="html"><![CDATA[<p>作为项目经理，如何认识什么才是一个项目呢？项目的某个分支需要1,2周的修改来发布一个不同的产品线，这个过程可以作为一个项目来运作。但是更深一层来说，整个代码库是否应该作为一个项目来运作，它的周期会长达1,2年，而足够灵活，以便快速调整，可以很快发布一个分支适用于不同的产品线，这个是项目的一个目标。</p>
 ]]></content>
   </entry>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: other | AmongOthers' Blog]]></title>
-  <link href="http://amongothers.github.com/blog/categories/other/atom.xml" rel="self"/>
-  <link href="http://amongothers.github.com/"/>
-  <updated>2013-01-15T22:46:53+08:00</updated>
-  <id>http://amongothers.github.com/</id>
+  <link href="http://AmongOthers.github.com/blog/categories/other/atom.xml" rel="self"/>
+  <link href="http://AmongOthers.github.com/"/>
+  <updated>2013-01-15T23:20:35+08:00</updated>
+  <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[小而精悍]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/04/small-and-agile/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/04/small-and-agile/"/>
     <updated>2013-01-04T18:57:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/04/small-and-agile</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/04/small-and-agile</id>
     <content type="html"><![CDATA[<p>今天一个同事在闲聊中告诉我，关于他的一个同学所在的公司，用5个人2个月的时间做了两款产品，一个是android平台上的游戏大厅，里面可以下载很多游戏，用户每下一个游戏公司就会收到提成; 另外一个是PC上的装机软件，给android手机灌装有酬金的软件，每天装大约1000台手机，每台手机收入5, 6元。 这么小的公司，月收入相当可观。所以说，有时候我们的视野是否太过狭窄，没有做足够多的尝试，活得太肤浅, 没有现实感。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[keroro]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/03/keroro/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/03/keroro/"/>
     <updated>2013-01-03T15:01:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/03/keroro</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/03/keroro</id>
     <content type="html"><![CDATA[<h1>keroro 出击!</h1>
 
 <p>BANDAI&copy;的keroro的模型入手, 现在来目睹keroro的诞生.</p>

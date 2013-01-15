@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[AmongOthers' Blog]]></title>
-  <link href="http://amongothers.github.com/atom.xml" rel="self"/>
-  <link href="http://amongothers.github.com/"/>
-  <updated>2013-01-15T22:46:53+08:00</updated>
-  <id>http://amongothers.github.com/</id>
+  <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
+  <link href="http://AmongOthers.github.com/"/>
+  <updated>2013-01-15T23:20:35+08:00</updated>
+  <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
     
@@ -15,27 +15,27 @@
   
   <entry>
     <title type="html"><![CDATA[银行因人而异的零花钱]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/15/pocket-money/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/15/pocket-money/"/>
     <updated>2013-01-15T22:30:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/15/pocket-money</id>
-    <content type="html"><![CDATA[<p>银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100），如果是大学生，则给更多的金额(例如500)。</p>
+    <id>http://AmongOthers.github.com/blog/2013/01/15/pocket-money</id>
+    <content type="html"><![CDATA[<p>银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100）;如果是大学生，则给更多的金额(例如500)。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[jack需要一个人或者两个人来签署文件]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/15/sign-file/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/15/sign-file/"/>
     <updated>2013-01-15T22:21:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/15/sign-file</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/15/sign-file</id>
     <content type="html"><![CDATA[<p>职工jack的工作需要将文件(OfficeFile)交给他的上司审阅，上司会在文件上标记同意与否，然后署名。一般而言，jack只需要把文件交给mick审阅就可以了。有时候他需要先把文件交给mike审阅，然后给另一个上司lily审阅，只有双方都同意，这份文件才能通过（当然如果mike已经不同意了，那么就不需要交给lily了），不过文件上只有一个署名栏，这个时候不需要lily的署名。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[让事情完成]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/10/make-it-smart/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/10/make-it-smart/"/>
     <updated>2013-01-10T15:00:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/10/make-it-smart</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/10/make-it-smart</id>
     <content type="html"><![CDATA[<p>设定目标的时候，如果能短时间之内做好，那么立刻去做；否则，明确的给出SMART目标，不要只是想着&#8221;有一天会去做&#8221;或者&#8221;有时间就会做&#8221;。只有坚持完成的目标才能带来价值，东一榔头西一棒子只是徒劳无益。
 这就是所谓的<em>GTD</em>。</p>
 ]]></content>
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[总是选择困难的道路]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/09/choose-the-difficult-one/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/09/choose-the-difficult-one/"/>
     <updated>2013-01-09T22:04:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/09/choose-the-difficult-one</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/09/choose-the-difficult-one</id>
     <content type="html"><![CDATA[<p>抱怨环境不够理想，抱怨做着自己不喜欢的工作，抱怨自己的未来不明朗，抱怨自己有很多责任。你并没有资格去享受那些你梦寐以求的东西，所以面对困难，是否能够坚持什么，从而实现自己的价值？抱怨是多么容易，想法设法逃避问题是多么容易，试图拖延问题是多么容易，但是这个时候更需要努力坚持，选择困难的道路。</p>
 
 <p>生活是多么的不容易，每当看到别人过着机会更少的人生的时候，就觉得自己是多么卑鄙而愚蠢。</p>
@@ -54,9 +54,9 @@
   
   <entry>
     <title type="html"><![CDATA[勿以善小而不为，勿以恶小而为之]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/08/good-or-bad/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/08/good-or-bad/"/>
     <updated>2013-01-08T22:58:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/08/good-or-bad</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/08/good-or-bad</id>
     <content type="html"><![CDATA[<p>如果说总结这几年的程序开发有什么经验之谈, 或者说, 希望自己能做到的职业素质，那么我觉得是:</p>
 
 <blockquote><p>勿以善小而不为, 勿以恶小而为之</p></blockquote>
@@ -67,61 +67,61 @@
   
   <entry>
     <title type="html"><![CDATA[加入好的社区, 了解时代的步伐]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/07/good-community/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/07/good-community/"/>
     <updated>2013-01-07T22:14:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/07/good-community</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/07/good-community</id>
     <content type="html"><![CDATA[<p>一个好的社区很重要, 可以及时了解到一些新的东西, 像是Ruby社区, 间接了解到了octopress和sublime, 一个人的视野真的太狭窄了, 如果想要提高自己, 要更多的交流和分享.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Developer Guidelines]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/06/developer-guidelines/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/06/developer-guidelines/"/>
     <updated>2013-01-06T23:54:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/06/developer-guidelines</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/06/developer-guidelines</id>
     <content type="html"><![CDATA[<p>每一个非单元测试的BUG都应该建立追踪，开发人员close这个BUG的时候必须提交版本控制的编号范围。尽可能采取颗粒度小的提交，以便清楚跟踪每个BUG的被修改历史。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[优化的噩梦]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/06/optimization-nightmare/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/06/optimization-nightmare/"/>
     <updated>2013-01-06T00:09:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/06/optimization-nightmare</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/06/optimization-nightmare</id>
     <content type="html"><![CDATA[<p>试着对问题理解更深，这样代码质量才能螺旋上升；而不是针对某个层次的理解不断进行优化，这样得到的代码质量的上升程度只是噪声而已。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[项目管理修炼之道]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/05/manageit/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/05/manageit/"/>
     <updated>2013-01-05T23:36:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/05/manageit</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/05/manageit</id>
     <content type="html"><![CDATA[<p>作为项目经理，如何认识什么才是一个项目呢？项目的某个分支需要1,2周的修改来发布一个不同的产品线，这个过程可以作为一个项目来运作。但是更深一层来说，整个代码库是否应该作为一个项目来运作，它的周期会长达1,2年，而足够灵活，以便快速调整，可以很快发布一个分支适用于不同的产品线，这个是项目的一个目标。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[小而精悍]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/04/small-and-agile/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/04/small-and-agile/"/>
     <updated>2013-01-04T18:57:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/04/small-and-agile</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/04/small-and-agile</id>
     <content type="html"><![CDATA[<p>今天一个同事在闲聊中告诉我，关于他的一个同学所在的公司，用5个人2个月的时间做了两款产品，一个是android平台上的游戏大厅，里面可以下载很多游戏，用户每下一个游戏公司就会收到提成; 另外一个是PC上的装机软件，给android手机灌装有酬金的软件，每天装大约1000台手机，每台手机收入5, 6元。 这么小的公司，月收入相当可观。所以说，有时候我们的视野是否太过狭窄，没有做足够多的尝试，活得太肤浅, 没有现实感。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[keroro]]></title>
-    <link href="http://amongothers.github.com/blog/2013/01/03/keroro/"/>
+    <link href="http://AmongOthers.github.com/blog/2013/01/03/keroro/"/>
     <updated>2013-01-03T15:01:00+08:00</updated>
-    <id>http://amongothers.github.com/blog/2013/01/03/keroro</id>
+    <id>http://AmongOthers.github.com/blog/2013/01/03/keroro</id>
     <content type="html"><![CDATA[<h1>keroro 出击!</h1>
 
 <p>BANDAI&copy;的keroro的模型入手, 现在来目睹keroro的诞生.</p>
 
 <p>盒子:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/box.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/box.jpg" alt="" /></p>
 
 <!-- more -->
 
@@ -132,11 +132,11 @@
 
 <p>看看板件:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/panel.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/panel.jpg" alt="" /></p>
 
 <p>注意，这个小小的黑色板件就是PC板件，上面的主要是连接部件:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/pc_panel.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/pc_panel.jpg" alt="" /></p>
 
 <p>所以事实上是非常简单的工程, 适合8岁以上儿童.
 但是坑爹的说明书竟然是日文的有没有!只好按图索骥了.
@@ -144,29 +144,29 @@
 
 <p>完成的第一个组件，狰狞的前胸像:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/robot_front.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/robot_front.jpg" alt="" /></p>
 
 <p>双足:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/foot.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/foot.jpg" alt="" /></p>
 
 <p>像是做手，足这种对称性结构的时候，部件在板上一般都是成对出现的，可能以为把它们都剪下来会比较方便，但是对于新手，可能会造成困惑，而导致装反了，所以还是不要这么做.</p>
 
 <p>双腕:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/hand.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/hand.jpg" alt="" /></p>
 
 <p>robot完成:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/robot.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/robot.jpg" alt="" /></p>
 
 <p>本体:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/keroro.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/keroro.jpg" alt="" /></p>
 
 <p>keroro出击:</p>
 
-<p><img src="http://amongothers.github.com/images/keroro/go.jpg" alt="" /></p>
+<p><img src="http://AmongOthers.github.com/images/keroro/go.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

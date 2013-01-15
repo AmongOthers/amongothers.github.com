@@ -1,67 +1,67 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/03/keroro/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/03/keroro/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/04/small-and-agile/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/04/small-and-agile/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/05/manageit/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/05/manageit/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/06/optimization-nightmare/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/06/optimization-nightmare/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/06/developer-guidelines/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/06/developer-guidelines/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/07/good-community/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/07/good-community/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/08/good-or-bad/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/08/good-or-bad/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/09/choose-the-difficult-one/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/09/choose-the-difficult-one/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/10/make-it-smart/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/10/make-it-smart/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/15/sign-file/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/15/sign-file/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/2013/01/15/pocket-money/</loc>
+        <loc>http://AmongOthers.github.com/blog/2013/01/15/pocket-money/</loc>
+        <lastmod>2013-01-15T23:16:35+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://AmongOthers.github.com/about/</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/about/</loc>
+        <loc>http://AmongOthers.github.com/archives/tags.html</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/archives/tags.html</loc>
-        <lastmod>2013-01-15T22:41:49+08:00</lastmod>
+        <loc>http://AmongOthers.github.com/blog/archives/</loc>
+        <lastmod>2013-01-15T23:16:35+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/blog/archives/</loc>
-        <lastmod>2013-01-15T22:41:49+08:00</lastmod>
+        <loc>http://AmongOthers.github.com/</loc>
+        <lastmod>2013-01-15T23:16:35+08:00</lastmod>
     </url>
     <url>
-        <loc>http://amongothers.github.com/</loc>
-        <lastmod>2013-01-15T22:41:49+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://amongothers.github.com/robots.txt</loc>
+        <loc>http://AmongOthers.github.com/robots.txt</loc>
         <lastmod>2013-01-15T22:41:49+08:00</lastmod>
     </url>
 </urlset>
