@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: tips | AmongOthers' Blog]]></title>
+  <link href="http://amongothers.github.com/blog/tags/tips/atom.xml" rel="self"/>
+  <link href="http://amongothers.github.com/"/>
+  <updated>2013-01-15T22:46:53+08:00</updated>
+  <id>http://amongothers.github.com/</id>
+  <author>
+    <name><![CDATA[AmongOthers]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[让事情完成]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/10/make-it-smart/"/>
+    <updated>2013-01-10T15:00:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/10/make-it-smart</id>
+    <content type="html"><![CDATA[<p>设定目标的时候，如果能短时间之内做好，那么立刻去做；否则，明确的给出SMART目标，不要只是想着"有一天会去做"或者"有时间就会做"。只有坚持完成的目标才能带来价值，东一榔头西一棒子只是徒劳无益。
+这就是所谓的<em>GTD</em>。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[总是选择困难的道路]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/09/choose-the-difficult-one/"/>
+    <updated>2013-01-09T22:04:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/09/choose-the-difficult-one</id>
+    <content type="html"><![CDATA[<p>抱怨环境不够理想，抱怨做着自己不喜欢的工作，抱怨自己的未来不明朗，抱怨自己有很多责任。你并没有资格去享受那些你梦寐以求的东西，所以面对困难，是否能够坚持什么，从而实现自己的价值？抱怨是多么容易，想法设法逃避问题是多么容易，试图拖延问题是多么容易，但是这个时候更需要努力坚持，选择困难的道路。</p>
+
+<p>生活是多么的不容易，每当看到别人过着机会更少的人生的时候，就觉得自己是多么卑鄙而愚蠢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[勿以善小而不为，勿以恶小而为之]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/08/good-or-bad/"/>
+    <updated>2013-01-08T22:58:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/08/good-or-bad</id>
+    <content type="html"><![CDATA[<p>如果说总结这几年的程序开发有什么经验之谈, 或者说, 希望自己能做到的职业素质，那么我觉得是:</p>
+
+<blockquote><p>勿以善小而不为, 勿以恶小而为之</p></blockquote>
+
+<p>就会少了很多在将来的某个时候的猛击.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[加入好的社区, 了解时代的步伐]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/07/good-community/"/>
+    <updated>2013-01-07T22:14:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/07/good-community</id>
+    <content type="html"><![CDATA[<p>一个好的社区很重要, 可以及时了解到一些新的东西, 像是Ruby社区, 间接了解到了octopress和sublime, 一个人的视野真的太狭窄了, 如果想要提高自己, 要更多的交流和分享.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Developer Guidelines]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/06/developer-guidelines/"/>
+    <updated>2013-01-06T23:54:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/06/developer-guidelines</id>
+    <content type="html"><![CDATA[<p>每一个非单元测试的BUG都应该建立追踪，开发人员close这个BUG的时候必须提交版本控制的编号范围。尽可能采取颗粒度小的提交，以便清楚跟踪每个BUG的被修改历史。</p>
+]]></content>
+  </entry>
+  
+</feed>

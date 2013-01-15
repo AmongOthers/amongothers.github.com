@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: oop-toy | AmongOthers' Blog]]></title>
+  <link href="http://amongothers.github.com/blog/categories/oop-toy/atom.xml" rel="self"/>
+  <link href="http://amongothers.github.com/"/>
+  <updated>2013-01-15T22:46:53+08:00</updated>
+  <id>http://amongothers.github.com/</id>
+  <author>
+    <name><![CDATA[AmongOthers]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[银行因人而异的零花钱]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/15/pocket-money/"/>
+    <updated>2013-01-15T22:30:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/15/pocket-money</id>
+    <content type="html"><![CDATA[<p>银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100），如果是大学生，则给更多的金额(例如500)。</p>
+]]></content>
+  </entry>
+  
+</feed>

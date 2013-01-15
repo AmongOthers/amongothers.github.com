@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: other | AmongOthers' Blog]]></title>
+  <link href="http://amongothers.github.com/blog/categories/other/atom.xml" rel="self"/>
+  <link href="http://amongothers.github.com/"/>
+  <updated>2013-01-15T22:46:53+08:00</updated>
+  <id>http://amongothers.github.com/</id>
+  <author>
+    <name><![CDATA[AmongOthers]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[小而精悍]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/04/small-and-agile/"/>
+    <updated>2013-01-04T18:57:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/04/small-and-agile</id>
+    <content type="html"><![CDATA[<p>今天一个同事在闲聊中告诉我，关于他的一个同学所在的公司，用5个人2个月的时间做了两款产品，一个是android平台上的游戏大厅，里面可以下载很多游戏，用户每下一个游戏公司就会收到提成; 另外一个是PC上的装机软件，给android手机灌装有酬金的软件，每天装大约1000台手机，每台手机收入5, 6元。 这么小的公司，月收入相当可观。所以说，有时候我们的视野是否太过狭窄，没有做足够多的尝试，活得太肤浅, 没有现实感。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[keroro]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/03/keroro/"/>
+    <updated>2013-01-03T15:01:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/03/keroro</id>
+    <content type="html"><![CDATA[<h1>keroro 出击!</h1>
+
+<p>BANDAI&copy;的keroro的模型入手, 现在来目睹keroro的诞生.</p>
+
+<p>盒子:</p>
+
+<p><img src="/images/keroro/box.jpg" alt="" /></p>
+
+<!-- more -->
+
+
+<p>首先补习一下模型的一些基本概念:</p>
+
+<blockquote><p>全新的板件你見過吧？板件上除了零件以外的部份，就是流道。 分線膜沒聽過，分模線倒是有。一般板件都是上下兩個模具合在一起，然後再往裏面注料而形成的。模具之間即使密合度再高，或多或少都會有點縫隙。在這種情況下再注料，就會在零件上造成注料溢漏。輕微的溢漏會在零件上形成一條突出的線，就是分模線。其實現在B社的出品已經把分模線現象控制得比較好了。就是國產出品的分模線還比較嚴重，甚至有的會形成大片的注料溢漏，俗稱漏膠……</p></blockquote>
+
+<p>看看板件:</p>
+
+<p><img src="/images/keroro/panel.jpg" alt="" /></p>
+
+<p>注意，这个小小的黑色板件就是PC板件，上面的主要是连接部件:</p>
+
+<p><img src="/images/keroro/pc_panel.jpg" alt="" /></p>
+
+<p>所以事实上是非常简单的工程, 适合8岁以上儿童.
+但是坑爹的说明书竟然是日文的有没有!只好按图索骥了.
+而且发现要从板件上剪下部件，需要刀刃很薄的剪刀，或者用专门的剪钳，楼主手上只有普通的剪刀，只好将就着用了.因此对部件的周围造成了一定的摩擦性损伤，出现了白点并且有毛刺.</p>
+
+<p>完成的第一个组件，狰狞的前胸像:</p>
+
+<p><img src="/images/keroro/robot_front.jpg" alt="" /></p>
+
+<p>双足:</p>
+
+<p><img src="/images/keroro/foot.jpg" alt="" /></p>
+
+<p>像是做手，足这种对称性结构的时候，部件在板上一般都是成对出现的，可能以为把它们都剪下来会比较方便，但是对于新手，可能会造成困惑，而导致装反了，所以还是不要这么做.</p>
+
+<p>双腕:</p>
+
+<p><img src="/images/keroro/hand.jpg" alt="" /></p>
+
+<p>robot完成:</p>
+
+<p><img src="/images/keroro/robot.jpg" alt="" /></p>
+
+<p>本体:</p>
+
+<p><img src="/images/keroro/keroro.jpg" alt="" /></p>
+
+<p>keroro出击:</p>
+
+<p><img src="/images/keroro/go.jpg" alt="" /></p>
+]]></content>
+  </entry>
+  
+</feed>

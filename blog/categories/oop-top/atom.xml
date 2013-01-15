@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: oop-top | AmongOthers' Blog]]></title>
+  <link href="http://amongothers.github.com/blog/categories/oop-top/atom.xml" rel="self"/>
+  <link href="http://amongothers.github.com/"/>
+  <updated>2013-01-15T22:46:53+08:00</updated>
+  <id>http://amongothers.github.com/</id>
+  <author>
+    <name><![CDATA[AmongOthers]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[jack需要一个人或者两个人来签署文件]]></title>
+    <link href="http://amongothers.github.com/blog/2013/01/15/sign-file/"/>
+    <updated>2013-01-15T22:21:00+08:00</updated>
+    <id>http://amongothers.github.com/blog/2013/01/15/sign-file</id>
+    <content type="html"><![CDATA[<p>职工jack的工作需要将文件(OfficeFile)交给他的上司审阅，上司会在文件上标记同意与否，然后署名。一般而言，jack只需要把文件交给mick审阅就可以了。有时候他需要先把文件交给mike审阅，然后给另一个上司lily审阅，只有双方都同意，这份文件才能通过（当然如果mike已经不同意了，那么就不需要交给lily了），不过文件上只有一个署名栏，这个时候不需要lily的署名。</p>
+]]></content>
+  </entry>
+  
+</feed>
