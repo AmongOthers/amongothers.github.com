@@ -4,7 +4,7 @@
   <title><![CDATA[AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-15T23:26:23+08:00</updated>
+  <updated>2013-01-16T17:12:04+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[codebase]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/16/codebase/"/>
+    <updated>2013-01-16T17:08:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/16/codebase</id>
+    <content type="html"><![CDATA[<p>时间比金钱重要，程序员要不断投资，而他的一个极其重要的财富就是自己在参与的项目中所积累的能快速解决问题的codebase。一个没有codebase的程序员必将很辛苦。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[编程语言的范式]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/16/programing-paradigm/"/>
+    <updated>2013-01-16T17:03:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/16/programing-paradigm</id>
+    <content type="html"><![CDATA[<p>c#的投影：</p>
+
+<pre><code>Minutes = Records.Sum((record) =&gt; record.Minutes);
+</code></pre>
+
+<p>的确是不错的特性。不同的编程语言的表示能力和思维方法是有差异的。多了解一些范式有助于开阔思路。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[银行因人而异的零花钱]]></title>
