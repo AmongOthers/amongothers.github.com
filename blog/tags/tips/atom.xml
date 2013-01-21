@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tips | AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/blog/tags/tips/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-21T21:03:39+08:00</updated>
+  <updated>2013-01-21T21:07:20+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -19,6 +19,15 @@
     <updated>2013-01-21T20:58:00+08:00</updated>
     <id>http://AmongOthers.github.com/blog/2013/01/21/do-not-mess-it</id>
     <content type="html"><![CDATA[<p>如果有用的信息隐藏在垃圾信息中，那么它的作用就大打折扣了。所以定期整理自己的知识库，使它精炼，就是必要的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Be yourself]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/be-yourself/"/>
+    <updated>2013-01-21T20:27:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/be-yourself</id>
+    <content type="html"><![CDATA[<p>习惯决定性格，性格决定命运，即使做的工作不顺心也好，不要忘记自己的原则，例如DRY，例如魔鬼在细节中，例如BUG比FEATURE更重要，这些原则也是程序员的素质所在。</p>
 ]]></content>
   </entry>
   
@@ -46,15 +55,6 @@
     <updated>2013-01-21T11:24:00+08:00</updated>
     <id>http://AmongOthers.github.com/blog/2013/01/21/why-we-are-losing-courage</id>
     <content type="html"><![CDATA[<p>定下来的生活，家庭，职业目标没有完成，这样的拖延和懒惰，让我们逐渐失去了勇气。最可怕的是逐渐成为了一无是处的人，甚至变得对感情非常漠然，就好像某人说的，"你只是不愿意被人打扰你的生活而已"，然后成为了可悲可怜可恨的人。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[长远的目标]]></title>
-    <link href="http://AmongOthers.github.com/blog/2013/01/16/long-target/"/>
-    <updated>2013-01-16T19:31:00+08:00</updated>
-    <id>http://AmongOthers.github.com/blog/2013/01/16/long-target</id>
-    <content type="html"><![CDATA[<p>你知道你这样是不行的，对于那些真正算得上目标的长远目标来说，这样的半吊子的努力是不行的。不能通过做某些事情来实现，而是通过成为那样的人才可能实现的目标。对于这些目标而言，3,4年或者5,6年甚至10年左右的时间才能够接近，而如果不从现在开始去学会坚持，那么它们可能一生都不可能实现了。</p>
 ]]></content>
   </entry>
   
