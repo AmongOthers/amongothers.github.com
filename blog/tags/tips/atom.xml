@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tips | AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/blog/tags/tips/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-21T12:09:17+08:00</updated>
+  <updated>2013-01-21T13:41:11+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DRY]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/dry/"/>
+    <updated>2013-01-21T13:40:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/dry</id>
+    <content type="html"><![CDATA[<p>DRY, DON'T REPEAT YOUSELF</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[为什么我们逐渐失去了勇气]]></title>
@@ -51,16 +60,6 @@
 </code></pre>
 
 <p>的确是不错的特性。不同的编程语言的表示能力和思维方法是有差异的。多了解一些范式有助于开阔思路。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[让事情完成]]></title>
-    <link href="http://AmongOthers.github.com/blog/2013/01/10/make-it-smart/"/>
-    <updated>2013-01-10T15:00:00+08:00</updated>
-    <id>http://AmongOthers.github.com/blog/2013/01/10/make-it-smart</id>
-    <content type="html"><![CDATA[<p>设定目标的时候，如果能短时间之内做好，那么立刻去做；否则，明确的给出SMART目标，不要只是想着"有一天会去做"或者"有时间就会做"。只有坚持完成的目标才能带来价值，东一榔头西一棒子只是徒劳无益。
-这就是所谓的<em>GTD</em>。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-21T12:09:17+08:00</updated>
+  <updated>2013-01-21T13:41:11+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DRY]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/dry/"/>
+    <updated>2013-01-21T13:40:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/dry</id>
+    <content type="html"><![CDATA[<p>DRY, DON&#8217;T REPEAT YOUSELF</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[为什么我们逐渐失去了勇气]]></title>
