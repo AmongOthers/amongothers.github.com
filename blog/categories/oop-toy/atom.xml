@@ -4,7 +4,7 @@
   <title><![CDATA[Category: oop-toy | AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/blog/categories/oop-toy/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-19T01:33:47+08:00</updated>
+  <updated>2013-01-21T11:33:33+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -456,6 +456,8 @@ getPocketMoneyForOutstandingHighSchoolStudent</li>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>补充：对于弱类型语言来说，就不能通过这种方法实现。</p>
 ]]></content>
   </entry>
   

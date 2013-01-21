@@ -4,7 +4,7 @@
   <title><![CDATA[AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-19T01:33:47+08:00</updated>
+  <updated>2013-01-21T11:33:33+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[为什么我们逐渐失去了勇气]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/we-are-losing-courage/"/>
+    <updated>2013-01-21T11:24:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/we-are-losing-courage</id>
+    <content type="html"><![CDATA[<p>定下来的生活，家庭，职业目标没有完成，这样的拖延和懒惰，让我们逐渐失去了勇气。最可怕的是逐渐成为了一无是处的人，甚至变得对感情非常漠然，就好像某人说的，&#8221;你只是不愿意被人打扰你的生活而已&#8221;，然后成为了可悲可怜可恨的人。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[命令行调用sublime]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/"/>
+    <updated>2013-01-19T12:56:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve created subl.bat in C:\Program Files\Sublime Text 2 with contents:</p>
+
+<pre><code>start sublime_text.exe %* 
+</code></pre>
+
+<p>Now that I have C:\Program Files\Sublime Text 2 in PATH, I can simply type &#8216;subl folder&#8217; and it works wonderfully without having to add anything to autostart.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[长远的目标]]></title>
@@ -403,7 +426,7 @@ getPocketMoneyForOutstandingHighSchoolStudent</li>
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>补充：对于弱类型语言来说，就不能通过这种方法实现。</p>
 ]]></content>
   </entry>
   
