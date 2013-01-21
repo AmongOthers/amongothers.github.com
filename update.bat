@@ -4,4 +4,4 @@ git add -u *
 @if not [%1]==[] set commit_msg=%1
 git commit -m %commit_msg%
 git push origin source
-git gen_deploy
+rake gen_deploy
