@@ -4,7 +4,7 @@
   <title><![CDATA[AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-21T13:43:57+08:00</updated>
+  <updated>2013-01-21T21:03:39+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[保持信息整洁]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/do-not-mess-it/"/>
+    <updated>2013-01-21T20:58:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/do-not-mess-it</id>
+    <content type="html"><![CDATA[<p>如果有用的信息隐藏在垃圾信息中，那么它的作用就大打折扣了。所以定期整理自己的知识库，使它精炼，就是必要的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Be yourself]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/21/be-yourself/"/>
+    <updated>2013-01-21T20:27:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/21/be-yourself</id>
+    <content type="html"><![CDATA[<p>习惯决定性格，性格决定命运，即使做的工作不顺心也好，不要忘记自己的原则，例如DRY，例如魔鬼在细节中，例如BUG比FEATURE更重要，这些原则也是程序员的素质所在。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[什么是好的主意]]></title>
