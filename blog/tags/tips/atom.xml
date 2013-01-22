@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tips | AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/blog/tags/tips/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-21T21:56:17+08:00</updated>
+  <updated>2013-01-22T13:11:46+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[保持信息整洁]]></title>
+    <title type="html"><![CDATA[加工你的知识库]]></title>
     <link href="http://AmongOthers.github.com/blog/2013/01/21/do-not-mess-it/"/>
     <updated>2013-01-21T20:58:00+08:00</updated>
     <id>http://AmongOthers.github.com/blog/2013/01/21/do-not-mess-it</id>
-    <content type="html"><![CDATA[<p>如果有用的信息隐藏在垃圾信息中，那么它的作用就大打折扣了。所以定期整理自己的知识库，使它精炼，就是必要的。</p>
+    <content type="html"><![CDATA[<p>如果有用的信息隐藏在垃圾信息中，那么它的作用就大打折扣了。所以定期整理自己的知识库，使它精炼，就是必要的。就好像木材堆积，如果不进行加工，只是腐烂掉而已。温故而知新。</p>
 ]]></content>
   </entry>
   
@@ -30,6 +30,20 @@
     <content type="html"><![CDATA[<p>习惯决定性格，性格决定命运，即使做的工作不顺心也好，不要忘记自己的原则，例如DRY，例如魔鬼在细节中，例如BUG比FEATURE更重要，这些原则也是程序员的素质所在。</p>
 
 <p>我应该把每一个问题当做挑战，尽量保持自己的原则，而不怨天尤人。</p>
+
+<p>虽然今天的确是受到了打击，同事的代码：</p>
+
+<pre><code>if (panel1.Visible == true)
+{
+
+}
+else
+{
+    panel1.Visible = true;
+}
+</code></pre>
+
+<p>但是那又怎么样呢？<em>你以为你是一个好的程序员，和谁比呢？</em>你做过什么项目？有雄厚的codebase吗？</p>
 ]]></content>
   </entry>
   
