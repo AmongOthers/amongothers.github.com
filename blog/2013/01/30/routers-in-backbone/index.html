@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>命令行调用sublime - AmongOthers' Blog</title>
+  <title>Backbone的routes - AmongOthers' Blog</title>
   <meta name="author" content="AmongOthers">
 
   
-  <meta name="description" content="I&#8217;ve created subl.bat in C:\Program Files\Sublime Text 2 with contents: start sublime_text.exe %* Now that I have C:\Program Files\Sublime Text &hellip;">
+  <meta name="description" content="对于有一些Spine.js以及even less的Ember.js的经验的我来说，Backbone.js非常奇怪的是，它没有Controller这个概念。 Understanding MVC And MVP (For JavaScript And Backbone Developers) by &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/">
+  <link rel="canonical" href="http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">命令行调用sublime</h1>
+      <h1 class="entry-title">Backbone的routes</h1>
     
     
       <p class="meta">
@@ -86,7 +86,7 @@
   
 
 
-<time datetime="2013-01-19T12:56:00+08:00" pubdate data-updated="true">Jan 19<span>th</span>, 2013</time>
+<time datetime="2013-01-30T21:11:00+08:00" pubdate data-updated="true">Jan 30<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -95,12 +95,68 @@
   </header>
 
 
-<div class="entry-content"><p>I&#8217;ve created subl.bat in C:\Program Files\Sublime Text 2 with contents:</p>
+<div class="entry-content"><p>对于有一些Spine.js以及even less的Ember.js的经验的我来说，Backbone.js非常奇怪的是，它没有Controller这个概念。</p>
 
-<pre><code>start sublime_text.exe %* 
+<p><a href="http://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers) by Addy Osmani</a></p>
+
+<p>Classic MVC：</p>
+
+<pre><code>View &lt;--- Controller ---&gt; Model
+|___________________________^
 </code></pre>
 
-<p>Now that I have C:\Program Files\Sublime Text 2 in PATH, I can simply type &#8216;subl folder&#8217; and it works wonderfully without having to add anything to autostart.</p>
+<p>MVP的一个重要特点是，Presenter并不直接依赖于View，而是依赖于ViewInterface的抽象。</p>
+
+<p>Supervising Controller：</p>
+
+<pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
+ |__________________________________________^
+</code></pre>
+
+<p>keypoint: Presenter可以直接操作View(该出手时就出手)</p>
+
+<p>Passive View:</p>
+
+<pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
+</code></pre>
+
+<p>keypoint: View非常无知，它不绑定在Model上，全部由Presenter直接控制</p>
+
+<p>MVVM(Presentation Model):</p>
+
+<pre><code>View ---&gt; ViewModel ---&gt; Model
+</code></pre>
+
+<p>keypoint: View绑定在ViewModel的属性上(多加一层好办事)，ViewModel不会直接操作View。(WPF)</p>
+
+<p>在Spine.js 1.0 (非常早的版本了，因为后来转而使用CoffeeScript而没有用过) 中，缺少的是View的概念，Controller负责响应UI事件和模式事件
+。没有数据绑定，它应该是属于Passive View的范畴。</p>
+
+<p>但是BackBone甚至没有Controller这个概念，而Route也不是Controller的替代品。</p>
+
+<p>TodoMVC的例子:</p>
+
+<p>地址：&#8221;index.html#&#8221;</p>
+
+<p><img src="/images/routing-in-backbone/default.png" alt="" /></p>
+
+<p>地址: &#8220;index.html#/active&#8221;</p>
+
+<p><img src="/images/routing-in-backbone/active.png" alt="" /></p>
+
+<p>一开始我认为是:</p>
+
+<blockquote><blockquote><p>对地址的URL附加的hash tags(#)的响应而进入应用的相应状态的过程</p></blockquote></blockquote>
+
+<p>Model还是那个Model，但是Controller施加了不同的过滤器，导致给View的是不同的数据。也就是说，Controller首先响应这个变化。</p>
+
+<p>但是这个不是非常正确的观点，看看 &#8220;http://example.com/#/posts/12&#8221; 表示访问id为12的文章， URL本来就是代表着资源，因此更自然的观点是：</p>
+
+<blockquote><blockquote><p>应用程序的不同的数据集合通过URL hash tag进行标识以便索引</p></blockquote></blockquote>
+
+<p>但是TodoMVC的Backbone实现不是这样子的。</p>
+
+<p>替换Model，这个是经典MVC的方式，因为View应该是Model的严格映射，而不是它的子集；而MVP会通过Presenter控制某个项目是否hidden（TodoMVC Backbone的实现）来实现子集的概念，而MVVM中，View是绑定在可以动态改变的ViewModel的属性上。</p>
 </div>
 
 
@@ -123,24 +179,30 @@
   
 
 
-<time datetime="2013-01-19T12:56:00+08:00" pubdate data-updated="true">Jan 19<span>th</span>, 2013</time>
+<time datetime="2013-01-30T21:11:00+08:00" pubdate data-updated="true">Jan 30<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/tool/'>tool</a>
+    <a class='category' href='/blog/categories/webapp/'>webapp</a>
   
 </span>
 
 
       
 
+<span class="tags">
+  
+    <a class='tag' href='/blog/tags/backbone-js/'>backbone.js</a>
+  
+</span>
+
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/" data-via="" data-counturl="http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/" data-via="" data-counturl="http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/" >Tweet</a>
   
   
   
@@ -149,10 +211,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/16/long-target/" title="Previous Post: 长远的目标">&laquo; 长远的目标</a>
+        <a class="basic-alignment left" href="/blog/2013/01/21/do-not-mess-it/" title="Previous Post: 加工你的知识库">&laquo; 加工你的知识库</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/21/why-we-are-losing-courage/" title="Next Post: 为什么我们逐渐失去了勇气">为什么我们逐渐失去了勇气 &raquo;</a>
       
     </p>
   </footer>
@@ -230,8 +290,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/';
-        var disqus_url = 'http://AmongOthers.github.com/blog/2013/01/19/using-sublime-with-console-on-windows/';
+        var disqus_identifier = 'http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/';
+        var disqus_url = 'http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/';
         var disqus_script = 'embed.js';
       
     (function () {

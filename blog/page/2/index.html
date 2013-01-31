@@ -9,7 +9,21 @@
   <meta name="author" content="AmongOthers">
 
   
-  <meta name="description" content="职工jack的工作需要将文件(OfficeFile)交给他的上司审阅，上司会在文件上标记同意与否，然后署名。一般而言，jack只需要把文件交给mick审阅就可以了。有时候他需要先把文件交给mike审阅，然后给另一个上司lily审阅，只有双方都同意，这份文件才能通过（当然如果mike已经不同意了， &hellip;">
+  <meta name="description" content="在正确的对象中做消息分派的决策
+消息链应该动态建立而不是静态建立 银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100）;如果是大学生，则给更多的金额(例如500)。 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +81,397 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/15/pocket-money/">银行因人而异的零花钱</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-15T22:30:00+08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/01/15/pocket-money/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><blockquote><ul>
+<li>在正确的对象中做消息分派的决策</li>
+<li>消息链应该动态建立而不是静态建立</li>
+</ul>
+</blockquote></blockquote>
+
+<p>银行推出了一个教育基金业务，参与的家庭如果有子女在读书，可以定期拿到钱，如果是高中生，就会给一定的金额（例如100）;如果是大学生，则给更多的金额(例如500)。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bank</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">500</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">100</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HighSchoolStudent</span> <span class="kd">extends</span> <span class="n">Student</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nd">@Override</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoneyForHighSchoolStudent</span><span class="o">();</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UniversityStudent</span> <span class="kd">extends</span> <span class="n">Student</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nd">@Override</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoneyForUniversityStudent</span><span class="o">();</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面的代码主要的问题就是，在Bank这个类中，为了不同的对象的调用特化了接口，这是代码中的smell，一般来说，在命名上为了某种目的而特化而不是使用更具
+有普遍性的抽象来命名，就导致了类的内部逻辑暴露而导致耦合，下面的情况：</p>
+
+<ul>
+<li>增加给小学生的零花钱的计划，则要Bank增加一个接口：getPocketMoneyForPrimarySchoolStudent</li>
+<li>银行调整计划，对部分满足要求的高中生提供200元的金额，则要增加一个类或者枚举， 而Bank增加一个接口：
+getPocketMoneyForOutstandingHighSchoolStudent</li>
+</ul>
+
+
+<blockquote><blockquote><p>接口设计应该提供对有关部件的方便访问形式，而同时又隐藏其实现的细节，这样，部件的修改才不会影响到使用者。</p></blockquote></blockquote>
+
+<p>所以，一个名字很特化的接口就意味着暴露了内部的实现，导致代码耦合。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bank</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="kd">final</span> <span class="n">Student</span> <span class="n">student</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span><span class="o">(</span><span class="n">student</span> <span class="k">instanceof</span> <span class="n">HighSchoolStudent</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">student</span> <span class="k">instanceof</span> <span class="n">UniversityStudent</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">100</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">500</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HighSchoolStudent</span> <span class="kd">extends</span> <span class="n">Student</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nd">@Override</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoney</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UniversityStudent</span> <span class="kd">extends</span> <span class="n">Student</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nd">@Override</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoney</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在下面的讨论中，会使用<em>消息</em>这些OOP理念中有特别意味的术语，并适当的用<em>方法</em>这个术语加以说明。</p>
+
+<p>在OOP的设计中，<em>消息链</em>是一个本质性的东西，发送一个消息给对象，而这个消息根据其<em>内在的状态</em>和<em>发送消息的对象</em>，进行不同的<em>消息分派</em>，也就是说或
+者选择<em>短响应</em>(在本方法里不调用其它方法而直接处理）, 或者 通过发送给自己某些公有的或者私有的消息（调用自己的公有或者私有方法），或者发送给其它
+对象(包括自己的内部对象或者其它可见的对象）消息，来完成对初始消息的响应，这就是所谓的<em>消息链</em>。</p>
+
+<p>如何将<em>发送消息的对象</em>告诉接受消息的对象呢？(也就是说，调用某个对象的方法，如何告诉被调用的对象是谁调用这个方法的)</p>
+
+<p>Bank的接口：getPocketMoney(final Student student) 将调用这个接口的Student对象的实例作为参数（注意使用<em>final</em>是比较好的）。而刚开始接触OOP的人可
+能会倾向于使用枚举，例如: getPocketMoney(StudentType.HIGHSCHOOL/StudentType.UNIVERSITY/&#8230;)，我认为枚举的使用对接口也是一种特化，本质上和第一种
+实现并没有任何区别，它们都破坏了<em>消息链</em>的基本原则：</p>
+
+<ul>
+<li>在正确的对象中做消息分派的决策</li>
+<li>消息链应该动态建立而不是静态建立</li>
+</ul>
+
+
+<p>现在增加一个需求：为杰出的高中生每个月提供200，如果使用枚举实现：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">enum</span> <span class="n">StudentType</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">HIGHSCHOOL</span><span class="o">,</span>
+</span><span class='line'>  <span class="n">UNIVERSITY</span><span class="o">,</span>
+</span><span class='line'>  <span class="n">OUTSTANDING_HIGHSCHOOL</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bank</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">StudentType</span> <span class="n">type</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span><span class="o">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">StudentType</span><span class="o">.</span><span class="na">HIGHSCHOOL</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">StudentType</span><span class="o">.</span><span class="na">UNIVERSITY</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">StudentType</span><span class="o">.</span><span class="na">OUTSTANDING_HIGHSCHOOL</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForOutstandingHighSchool</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">100</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">500</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForOutstandingHighSchool</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">200</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HighSchoolStudent</span> <span class="kd">extends</span> <span class="n">Student</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="n">mScore</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">public</span> <span class="nf">HighSchoolStudent</span><span class="o">(</span><span class="kt">int</span> <span class="n">score</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="n">mScore</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nd">@Override</span>
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="n">Bank</span> <span class="n">bank</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span><span class="o">(</span><span class="n">mScore</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoney</span><span class="o">(</span><span class="n">StudentType</span><span class="o">.</span><span class="na">HIGHSCHOOL</span><span class="o">);</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="n">bank</span><span class="o">.</span><span class="na">getPocketMoney</span><span class="o">(</span><span class="n">StudentType</span><span class="o">.</span><span class="na">OUTSTANDING_HIGHSCHOOL</span><span class="o">);</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>按照上面的实现，如果银行修改标准，80分以上的就可以认为是OutstandingHighSchoolStudent，那么就需要修改HighSchoolStudent的代码，而不是Bank的代码，
+这样很奇怪，不是吗？原因就在于我们在错误的对象中去做<em>消息分派</em>，评价是否OutStandingHighSchoolStudent的逻辑本来就应该出现在Bank中。另一方面来说
+，银行决定是否OutStandingHighSchoolStudent的标准如果是动态变化的，那么使用枚举而产生特化的接口就无法做到了，<em>消息分派</em>应该尽可能动态（或者术语：
+<em>晚绑定</em>）。当接口使用枚举作为参数的时候，可能意味着这是一种代码的smell。</p>
+
+<p><em>动态构建消息链</em>的版本：</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">zww</span><span class="o">.</span><span class="na">pocketmoney</span><span class="o">;</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bank</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="n">mOutstandingScore</span> <span class="o">=</span> <span class="mi">90</span><span class="o">;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setOutstandingScore</span><span class="o">(</span><span class="kt">int</span> <span class="n">score</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="n">mOutstandingScore</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getPocketMoney</span><span class="o">(</span><span class="kd">final</span> <span class="n">Student</span> <span class="n">student</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">if</span><span class="o">(</span><span class="n">student</span> <span class="k">instanceof</span> <span class="n">HighSchoolStudent</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="n">HighSchoolStudent</span> <span class="n">hsStudent</span> <span class="o">=</span> <span class="o">(</span><span class="n">HighSchoolStudent</span><span class="o">)</span><span class="n">student</span><span class="o">;</span>
+</span><span class='line'>          <span class="k">if</span><span class="o">(</span><span class="n">hsStudent</span><span class="o">.</span><span class="na">getScore</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">mOutstandingScore</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>              <span class="k">return</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">();</span>
+</span><span class='line'>          <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>              <span class="k">return</span> <span class="nf">getPocketMoneyForOutstandingHighSchoolStudent</span><span class="o">();</span>
+</span><span class='line'>          <span class="o">}</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">student</span> <span class="k">instanceof</span> <span class="n">UniversityStudent</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">();</span>
+</span><span class='line'>      <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>          <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>      <span class="o">}</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForHighSchoolStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">100</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForUniversityStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">500</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="kd">private</span> <span class="kt">int</span> <span class="nf">getPocketMoneyForOutstandingHighSchoolStudent</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">200</span><span class="o">;</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>补充：对于弱类型语言来说，就不能通过这种方法实现。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -417,56 +822,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/03/keroro/">Keroro</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-03T15:01:00+08:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2013</time>
-        
-         | <a href="/blog/2013/01/03/keroro/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>keroro 出击!</h1>
-
-<p>BANDAI&copy;的keroro的模型入手, 现在来目睹keroro的诞生.</p>
-
-<p>盒子:</p>
-
-<p><img src="/images/keroro/box.jpg" alt="" /></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/01/03/keroro/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -479,6 +837,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/30/routers-in-backbone/">Backbone的routes</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/01/21/do-not-mess-it/">加工你的知识库</a>
@@ -496,21 +858,18 @@
         <a href="/blog/2013/01/21/dry/">DRY</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/01/21/why-we-are-losing-courage/">为什么我们逐渐失去了勇气</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <span id="tag-cloud"><a href='/blog/categories/afterreading' style='font-size: 130.0%'>afterReading(1)</a> <a href='/blog/categories/oop-toy' style='font-size: 160.0%'>oop-toy(2)</a> <a href='/blog/categories/other' style='font-size: 160.0%'>other(2)</a> <a href='/blog/categories/tool' style='font-size: 130.0%'>tool(1)</a> </span>
+    <span id="tag-cloud"><a href='/blog/categories/afterreading' style='font-size: 130.0%'>afterReading(1)</a> <a href='/blog/categories/oop-toy' style='font-size: 160.0%'>oop-toy(2)</a> <a href='/blog/categories/other' style='font-size: 160.0%'>other(2)</a> <a href='/blog/categories/tool' style='font-size: 130.0%'>tool(1)</a> <a href='/blog/categories/webapp' style='font-size: 130.0%'>webapp(1)</a> </span>
 </section>
 <section>
   <h1>Tags</h1>
   <ul class="tag-cloud">
-<a style="font-size: 60%" href="/blog/tags/pm/">pm</a>
-<a style="font-size: 60%" href="/blog/tags/programming/">programming</a>
+<a style="font-size: 60%" href="/blog/tags/backbone-js/">backbone.js</a>
+<a style="font-size: 86%" href="/blog/tags/pm/">pm</a>
+<a style="font-size: 86%" href="/blog/tags/programming/">programming</a>
 <a style="font-size: 165%" href="/blog/tags/tips/">tips</a>
 
   </ul>

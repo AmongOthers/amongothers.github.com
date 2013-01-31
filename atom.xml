@@ -4,7 +4,7 @@
   <title><![CDATA[AmongOthers' Blog]]></title>
   <link href="http://AmongOthers.github.com/atom.xml" rel="self"/>
   <link href="http://AmongOthers.github.com/"/>
-  <updated>2013-01-22T14:47:37+08:00</updated>
+  <updated>2013-01-31T17:14:39+08:00</updated>
   <id>http://AmongOthers.github.com/</id>
   <author>
     <name><![CDATA[AmongOthers]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Backbone的routes]]></title>
+    <link href="http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone/"/>
+    <updated>2013-01-30T21:11:00+08:00</updated>
+    <id>http://AmongOthers.github.com/blog/2013/01/30/routers-in-backbone</id>
+    <content type="html"><![CDATA[<p>对于有一些Spine.js以及even less的Ember.js的经验的我来说，Backbone.js非常奇怪的是，它没有Controller这个概念。</p>
+
+<p><a href="http://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers) by Addy Osmani</a></p>
+
+<p>Classic MVC：</p>
+
+<pre><code>View &lt;--- Controller ---&gt; Model
+|___________________________^
+</code></pre>
+
+<p>MVP的一个重要特点是，Presenter并不直接依赖于View，而是依赖于ViewInterface的抽象。</p>
+
+<p>Supervising Controller：</p>
+
+<pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
+ |__________________________________________^
+</code></pre>
+
+<p>keypoint: Presenter可以直接操作View(该出手时就出手)</p>
+
+<p>Passive View:</p>
+
+<pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
+</code></pre>
+
+<p>keypoint: View非常无知，它不绑定在Model上，全部由Presenter直接控制</p>
+
+<p>MVVM(Presentation Model):</p>
+
+<pre><code>View ---&gt; ViewModel ---&gt; Model
+</code></pre>
+
+<p>keypoint: View绑定在ViewModel的属性上(多加一层好办事)，ViewModel不会直接操作View。(WPF)</p>
+
+<p>在Spine.js 1.0 (非常早的版本了，因为后来转而使用CoffeeScript而没有用过) 中，缺少的是View的概念，Controller负责响应UI事件和模式事件
+。没有数据绑定，它应该是属于Passive View的范畴。</p>
+
+<p>但是BackBone甚至没有Controller这个概念，而Route也不是Controller的替代品。</p>
+
+<p>TodoMVC的例子:</p>
+
+<p>地址：&#8221;index.html#&#8221;</p>
+
+<p><img src="http://AmongOthers.github.com/images/routing-in-backbone/default.png" alt="" /></p>
+
+<p>地址: &#8220;index.html#/active&#8221;</p>
+
+<p><img src="http://AmongOthers.github.com/images/routing-in-backbone/active.png" alt="" /></p>
+
+<p>一开始我认为是:</p>
+
+<blockquote><blockquote><p>对地址的URL附加的hash tags(#)的响应而进入应用的相应状态的过程</p></blockquote></blockquote>
+
+<p>Model还是那个Model，但是Controller施加了不同的过滤器，导致给View的是不同的数据。也就是说，Controller首先响应这个变化。</p>
+
+<p>但是这个不是非常正确的观点，看看 &#8220;http://example.com/#/posts/12&#8221; 表示访问id为12的文章， URL本来就是代表着资源，因此更自然的观点是：</p>
+
+<blockquote><blockquote><p>应用程序的不同的数据集合通过URL hash tag进行标识以便索引</p></blockquote></blockquote>
+
+<p>但是TodoMVC的Backbone实现不是这样子的。</p>
+
+<p>替换Model，这个是经典MVC的方式，因为View应该是Model的严格映射，而不是它的子集；而MVP会通过Presenter控制某个项目是否hidden（TodoMVC Backbone的实现）来实现子集的概念，而MVVM中，View是绑定在可以动态改变的ViewModel的属性上。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[加工你的知识库]]></title>
@@ -567,66 +637,6 @@ getPocketMoneyForOutstandingHighSchoolStudent</li>
     <updated>2013-01-04T18:57:00+08:00</updated>
     <id>http://AmongOthers.github.com/blog/2013/01/04/small-and-agile</id>
     <content type="html"><![CDATA[<p>今天一个同事在闲聊中告诉我，关于他的一个同学所在的公司，用5个人2个月的时间做了两款产品，一个是android平台上的游戏大厅，里面可以下载很多游戏，用户每下一个游戏公司就会收到提成; 另外一个是PC上的装机软件，给android手机灌装有酬金的软件，每天装大约1000台手机，每台手机收入5, 6元。 这么小的公司，月收入相当可观。所以说，有时候我们的视野是否太过狭窄，没有做足够多的尝试，活得太肤浅, 没有现实感。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[keroro]]></title>
-    <link href="http://AmongOthers.github.com/blog/2013/01/03/keroro/"/>
-    <updated>2013-01-03T15:01:00+08:00</updated>
-    <id>http://AmongOthers.github.com/blog/2013/01/03/keroro</id>
-    <content type="html"><![CDATA[<h1>keroro 出击!</h1>
-
-<p>BANDAI&copy;的keroro的模型入手, 现在来目睹keroro的诞生.</p>
-
-<p>盒子:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/box.jpg" alt="" /></p>
-
-<!-- more -->
-
-
-<p>首先补习一下模型的一些基本概念:</p>
-
-<blockquote><p>全新的板件你見過吧？板件上除了零件以外的部份，就是流道。 分線膜沒聽過，分模線倒是有。一般板件都是上下兩個模具合在一起，然後再往裏面注料而形成的。模具之間即使密合度再高，或多或少都會有點縫隙。在這種情況下再注料，就會在零件上造成注料溢漏。輕微的溢漏會在零件上形成一條突出的線，就是分模線。其實現在B社的出品已經把分模線現象控制得比較好了。就是國產出品的分模線還比較嚴重，甚至有的會形成大片的注料溢漏，俗稱漏膠……</p></blockquote>
-
-<p>看看板件:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/panel.jpg" alt="" /></p>
-
-<p>注意，这个小小的黑色板件就是PC板件，上面的主要是连接部件:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/pc_panel.jpg" alt="" /></p>
-
-<p>所以事实上是非常简单的工程, 适合8岁以上儿童.
-但是坑爹的说明书竟然是日文的有没有!只好按图索骥了.
-而且发现要从板件上剪下部件，需要刀刃很薄的剪刀，或者用专门的剪钳，楼主手上只有普通的剪刀，只好将就着用了.因此对部件的周围造成了一定的摩擦性损伤，出现了白点并且有毛刺.</p>
-
-<p>完成的第一个组件，狰狞的前胸像:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/robot_front.jpg" alt="" /></p>
-
-<p>双足:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/foot.jpg" alt="" /></p>
-
-<p>像是做手，足这种对称性结构的时候，部件在板上一般都是成对出现的，可能以为把它们都剪下来会比较方便，但是对于新手，可能会造成困惑，而导致装反了，所以还是不要这么做.</p>
-
-<p>双腕:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/hand.jpg" alt="" /></p>
-
-<p>robot完成:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/robot.jpg" alt="" /></p>
-
-<p>本体:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/keroro.jpg" alt="" /></p>
-
-<p>keroro出击:</p>
-
-<p><img src="http://AmongOthers.github.com/images/keroro/go.jpg" alt="" /></p>
 ]]></content>
   </entry>
   
