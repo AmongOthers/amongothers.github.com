@@ -9,7 +9,8 @@
   <meta name="author" content="AmongOthers">
 
   
-  <meta name="description" content="对于有一些Spine.js以及even less的Ember.js的经验的我来说，Backbone.js非常奇怪的是，它没有Controller这个概念。 Understanding MVC And MVP (For JavaScript And Backbone Developers) by &hellip;">
+  <meta name="description" content="几种MV*框架的含义 关键的区别就是，View是依赖于绑定还是直接操作？如果是绑定，那么绑定在谁身上。 Classic MVC View &lt;--- Controller ---&gt; Model
+|___________________________^ MVP &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,7 +74,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/30/routers-in-backbone/">Backbone的routes</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/01/30/MVxx-and-Backbone/">MV*与Backbone</a></h1>
     
     
       <p class="meta">
@@ -91,75 +92,68 @@
 
 <time datetime="2013-01-30T21:11:00+08:00" pubdate data-updated="true">Jan 30<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/01/30/routers-in-backbone/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/01/30/MVxx-and-Backbone/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>对于有一些Spine.js以及even less的Ember.js的经验的我来说，Backbone.js非常奇怪的是，它没有Controller这个概念。</p>
+  <div class="entry-content"><h2>几种MV*框架的含义</h2>
 
-<p><a href="http://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers) by Addy Osmani</a></p>
+<p>关键的区别就是，View是依赖于绑定还是直接操作？如果是绑定，那么绑定在谁身上。</p>
 
-<p>Classic MVC：</p>
+<h3>Classic MVC</h3>
 
 <pre><code>View &lt;--- Controller ---&gt; Model
 |___________________________^
 </code></pre>
 
-<p>MVP的一个重要特点是，Presenter并不直接依赖于View，而是依赖于ViewInterface的抽象。</p>
+<h3>MVP</h3>
 
-<p>Supervising Controller：</p>
+<p>Presenter并不直接依赖于View，而是依赖于ViewInterface的抽象，并具有直接操作View的能力。而在Supervising Controller方式的MVP中，View的渲染主要还是通过绑定在Model上，Presenter在比较复杂的情况下才出手；而Passive View方式的MVP中，View是无知的，Presenter控制View的渲染的细节。</p>
+
+<h4>Supervising Controller</h4>
 
 <pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
  |__________________________________________^
 </code></pre>
 
-<p>keypoint: Presenter可以直接操作View(该出手时就出手)</p>
-
-<p>Passive View:</p>
+<h4>Passive View</h4>
 
 <pre><code>View as ViewInterface &lt;--- Presenter ---&gt; Model
 </code></pre>
 
-<p>keypoint: View非常无知，它不绑定在Model上，全部由Presenter直接控制</p>
+<h3>MVVM(Presentation Model)</h3>
 
-<p>MVVM(Presentation Model):</p>
+<p>源自微软的WPF的一套模式，View绑定在ViewModel的属性上（面向对象的方式：增加一个间接层来解决问题），ViewModel不会直接操作View。</p>
 
 <pre><code>View ---&gt; ViewModel ---&gt; Model
 </code></pre>
 
-<p>keypoint: View绑定在ViewModel的属性上(多加一层好办事)，ViewModel不会直接操作View。(WPF)</p>
+<h2>例子</h2>
 
-<p>在Spine.js 1.0 (非常早的版本了，因为后来转而使用CoffeeScript而没有用过) 中，缺少的是View的概念，Controller负责响应UI事件和模式事件
-。没有数据绑定，它应该是属于Passive View的范畴。</p>
-
-<p>但是BackBone甚至没有Controller这个概念，而Route也不是Controller的替代品。</p>
-
-<p>TodoMVC的例子:</p>
-
-<p>地址：&#8221;index.html#&#8221;</p>
+<p>URL: &#8220;index.html#&#8221;</p>
 
 <p><img src="/images/routing-in-backbone/default.png" alt="" /></p>
 
-<p>地址: &#8220;index.html#/active&#8221;</p>
+<p>URL: &#8220;index.html#/active&#8221;</p>
 
 <p><img src="/images/routing-in-backbone/active.png" alt="" /></p>
 
-<p>一开始我认为是:</p>
+<p>一开始我认为Route的本质是：</p>
 
-<blockquote><blockquote><p>对地址的URL附加的hash tags(#)的响应而进入应用的相应状态的过程</p></blockquote></blockquote>
+<blockquote><blockquote><p>对URL附加的hash tags(#)的响应而进入应用的相应状态的过程</p></blockquote></blockquote>
 
-<p>Model还是那个Model，但是Controller施加了不同的过滤器，导致给View的是不同的数据。也就是说，Controller首先响应这个变化。</p>
-
-<p>但是这个不是非常正确的观点，看看 &#8220;http://example.com/#/posts/12&#8221; 表示访问id为12的文章， URL本来就是代表着资源，因此更自然的观点是：</p>
+<p>但是就像 &#8220;http://example.com/#/posts/12&#8221; 表示访问id为12的文章， URL代表着资源，因此更自然的观点是：</p>
 
 <blockquote><blockquote><p>应用程序的不同的数据集合通过URL hash tag进行标识以便索引</p></blockquote></blockquote>
 
-<p>但是TodoMVC的Backbone实现不是这样子的。</p>
+<p>虽然后者显得更加自然，但是这个是Classic MVC的方式，将View绑定到新的Model上，用的比较少。MVP则通过Presenter控制某个项目是否hidden来实现（TodoMVC Backbone），而MVVM中，View绑定在动态改变的ViewModel的属性上，本例中可以是Visible Items。</p>
 
-<p>替换Model，这个是经典MVC的方式，因为View应该是Model的严格映射，而不是它的子集；而MVP会通过Presenter控制某个项目是否hidden（TodoMVC Backbone的实现）来实现子集的概念，而MVVM中，View是绑定在可以动态改变的ViewModel的属性上。</p>
+<p>BackBone.js没有天然的数据绑定。它倾向于Passive View方式的MVP。不过它的设计意图是对各种模式开放，而不假定:</p>
+
+<p><a href="http://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers) by Addy Osmani</a></p>
 </div>
   
   
@@ -550,7 +544,7 @@ else
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/01/30/routers-in-backbone/">Backbone的routes</a>
+        <a href="/blog/2013/01/30/MVxx-and-Backbone/">MV*与Backbone</a>
       </li>
     
       <li class="post">
