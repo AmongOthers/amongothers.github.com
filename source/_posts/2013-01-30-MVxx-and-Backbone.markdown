@@ -13,8 +13,7 @@ tags: [backbone.js]
 
 ### Classic MVC
 
-    View <--- Controller ---> Model
-	|___________________________^
+    View ---> Model <--- Controller
 
 ### MVP
 
@@ -45,15 +44,17 @@ URL: "index.html#/active"
 
 ![](/images/routing-in-backbone/active.png)
 
-一开始我认为Route的本质是： 
+Route的本质是： 
 
 >> 对URL附加的hash tags(#)的响应而进入应用的相应状态的过程
 
-但是就像 "http://example.com/#/posts/12" 表示访问id为12的文章， URL代表着资源，因此更自然的观点是：
+还是
 
 >> 应用程序的不同的数据集合通过URL hash tag进行标识以便索引
 
-虽然后者显得更加自然，但是这个是Classic MVC的方式，将View绑定到新的Model上，用的比较少。MVP则通过Presenter控制某个项目是否hidden来实现（TodoMVC Backbone），而MVVM中，View绑定在动态改变的ViewModel的属性上，本例中可以是Visible Items。
+像 "http://example.com/#/posts/12" 表示访问id为12的文章， URL代表着资源，因此 后者显得更加自然。但是这个是Classic MVC的方式，将View绑定到新的Model上，用的比较少。MVP则通过Presenter控制某个项目是否hidden来实现（TodoMVC Backbone），而MVVM中，View绑定在动态改变的ViewModel的属性上，本例中可以是Visible Items。
+
+然而像"http://exmaple.com/#/welcome", "http://example.com/#/playing"这样的，则是第一种说法比较自然。
 
 BackBone.js没有天然的数据绑定。它倾向于Passive View方式的MVP。不过它的设计意图是对各种模式开放，而不假定:
 
